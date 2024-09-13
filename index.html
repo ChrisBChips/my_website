@@ -12,6 +12,16 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			.responsive-image {
+            max-width: 100%;  /* Shrinks the image to fit the container */
+            height: auto;  /* Maintains the aspect ratio */
+            display: block;  /* Prevents inline-block spacing issues */
+			}
+			.image-container {
+				width: 100%;  /* Container width can be adjusted as needed */
+				max-width: 800px;  /* Image won't grow beyond 800px (or its original size) */
+				margin: 0 auto;  /* Centers the container */
+			}
 			.two-column-list {
             display: flex;  /* Use Flexbox */
             flex-wrap: wrap;  /* Allow items to wrap */
@@ -56,7 +66,7 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<img src="images/headshot.jpg">
+							<img src="images/headshot.jpg" class="responsive-image">
 							<h1>Chris Balenzano</h1>
 							<p>Computer Engineer, Singer, and Powerlifter.</p>
 							<ul class="actions">
